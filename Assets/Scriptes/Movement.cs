@@ -10,7 +10,11 @@ public class Movement : MonoBehaviour
     public float speedMove = 2f;
 
     private Rigidbody rigidbody;
-      public Vector3 position
+
+    private ParticleSystem dieParticle;
+    public GameObject explosionDie;
+    
+    public Vector3 position
     {
         get
         {
@@ -62,4 +66,5 @@ public class Movement : MonoBehaviour
 
         }
     }
+   
 }

@@ -8,8 +8,6 @@ public class EnemyMove : MonoBehaviour
 
    public GameObject finishRoad;
     public GameObject startRoad;
-    private bool isTurn = true;
-  
 
     // Update is called once per frame
     void Update()
