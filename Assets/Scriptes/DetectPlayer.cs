@@ -6,9 +6,11 @@ using UnityEngine.UI;
 public class DetectPlayer : MonoBehaviour
 {
     [SerializeField] private Image imagePanel;
+   
     void Start()
     {
         imagePanel.gameObject.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -26,7 +28,7 @@ public class DetectPlayer : MonoBehaviour
         }
     }
 
-   private IEnumerator PlayerDie(GameObject player)
+    private IEnumerator PlayerDie(GameObject player)
     {
         
         yield return new WaitForSeconds(0.5f);

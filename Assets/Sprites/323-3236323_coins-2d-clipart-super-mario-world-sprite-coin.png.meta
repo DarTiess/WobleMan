@@ -1,0 +1,560 @@
+fileFormatVersion: 2
+guid: d9ad36194aae6404cbf2da5cb5e511a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8266363359716944617
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_0
+  - first:
+      213: -2700023565748165781
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_1
+  - first:
+      213: 652461466725593144
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_2
+  - first:
+      213: -8257255326448931735
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_3
+  - first:
+      213: -6377778103759575102
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_4
+  - first:
+      213: 675376162733852642
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_5
+  - first:
+      213: 2359130007272132282
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_6
+  - first:
+      213: -2398750295647013220
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_7
+  - first:
+      213: 118355714232214452
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_8
+  - first:
+      213: 3622732938028234417
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_9
+  - first:
+      213: 7200044766750128843
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_10
+  - first:
+      213: -6755114356213781689
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_11
+  - first:
+      213: 495456368554599729
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_12
+  - first:
+      213: 4285066616782457935
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_13
+  - first:
+      213: 8662562031895520649
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_14
+  - first:
+      213: 4295993377996580760
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_15
+  - first:
+      213: -577262055272208648
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_16
+  - first:
+      213: 3999951552639946566
+    second: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 685
+        width: 163
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71554c7425af74d80800000000000000
+      internalID: -8266363359716944617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_1
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 689
+        width: 129
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63a56e4fd6978ad0800000000000000
+      internalID: -2700023565748165781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_2
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 689
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8303fc14f320e0900800000000000000
+      internalID: 652461466725593144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_3
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 683
+        width: 121
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c2f478706586d80800000000000000
+      internalID: -8257255326448931735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 689
+        width: 162
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c765250b949d77a0800000000000000
+      internalID: -6377778103759575102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_5
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 539
+        width: 147
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7848daa0b6f5900800000000000000
+      internalID: 675376162733852642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_6
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 532
+        width: 137
+        height: 151
+      alignment: 9
+      pivot: {x: 0.5000001, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe8b6e0e305db020800000000000000
+      internalID: 2359130007272132282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_7
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 536
+        width: 131
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96b813b05de5bed0800000000000000
+      internalID: -2398750295647013220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_8
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 535
+        width: 140
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3e2ff15eb74a100800000000000000
+      internalID: 118355714232214452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_9
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 528
+        width: 148
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6b74fb968864230800000000000000
+      internalID: 3622732938028234417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 388
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca3d016192bbe360800000000000000
+      internalID: 7200044766750128843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_11
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 388
+        width: 143
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b6cbc78430142a0800000000000000
+      internalID: -6755114356213781689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_12
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 386
+        width: 137
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135e66131f630e600800000000000000
+      internalID: 495456368554599729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_13
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 240
+        width: 117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c043c726d977b30800000000000000
+      internalID: 4285066616782457935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_14
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 238
+        width: 140
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9852be3954a973870800000000000000
+      internalID: 8662562031895520649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_15
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 240
+        width: 131
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897aae4573f6e9b30800000000000000
+      internalID: 4295993377996580760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_16
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 75
+        width: 129
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6203d18372df7f0800000000000000
+      internalID: -577262055272208648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 323-3236323_coins-2d-clipart-super-mario-world-sprite-coin_17
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 85
+        width: 138
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f40e59ebea28730800000000000000
+      internalID: 3999951552639946566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f926d1a59b0728e4ca4417233341bee0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

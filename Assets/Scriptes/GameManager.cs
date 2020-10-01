@@ -23,7 +23,6 @@ public class GameManager : MonoBehaviour
         explosion = explosionEffect.GetComponent<ParticleSystem>();
         explosion.Play(true);
         GameObject player = Instantiate(playerPrefab);
-
         player.transform.position = startPosition;
     }
    

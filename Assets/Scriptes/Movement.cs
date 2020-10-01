@@ -9,33 +9,24 @@ public class Movement : MonoBehaviour
     private Vector2 endTouch;
     public float speedMove = 2f;
 
-    private Rigidbody rigidbody;
+   private Rigidbody rigidbody;
 
     private ParticleSystem dieParticle;
     public GameObject explosionDie;
-    
-    public Vector3 position
-    {
-        get
-        {
-            return (this.transform.position);
-        }
-        set
-        {
-            this.transform.position = value;
-        }
-    }
-
-
+  
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
+      rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
+       rigidbody.AddForce(new Vector2(0, 50));
+    }
+    private void FixedUpdate()
+    {
+         Move();
     }
 
     public void Move()
@@ -53,16 +44,17 @@ public class Movement : MonoBehaviour
                 endTouch = touch.position;
                
             }
-             
+            Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+            Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
 
             Vector3 moveDirection = startTouch - endTouch;
 
-            
-            Vector3 tempPosition = rigidbody.position;
-                tempPosition.x -= moveDirection.x * speedMove  * Time.deltaTime;
+            Vector3 tempPosition =transform.position;
+              tempPosition.x -= moveDirection.x * speedMove  * Time.deltaTime;
                 tempPosition.z -= moveDirection.y * speedMove * Time.deltaTime;
-            rigidbody.position = tempPosition;
-           
+            transform.position = tempPosition;
+           // rigidbody.velocity = new Vector2(tempPosition.x * speedMove, rigidbody.velocity.y);
+           rigidbody.MovePosition(transform.position);
 
         }
     }
