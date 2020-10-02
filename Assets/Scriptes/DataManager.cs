@@ -10,6 +10,7 @@ public class DataManager : MonoBehaviour, IGameManager
 
     public void Startup()
     {
+        //создаем файл на устройстве для дальнейшей записи данных
         fileName = Path.Combine(Application.persistentDataPath, "wobbleGame.dat");
     }
 
@@ -31,24 +32,39 @@ public class DataManager : MonoBehaviour, IGameManager
 
     public void LoadGameState()
     {
+        //получаем данные
+        Dictionary<string, object> _savedGameState= LoadSaveFile();
+      
+        ManagerController.Mission.UpdateData((int)_savedGameState["curLevel"], (int)_savedGameState["maxLevel"]);
+        ManagerController.Player.UpdateData((int)_savedGameState["coins"], (int)_savedGameState["maxCoins"]); ManagerController.Mission.RestatrCurrent((int)_savedGameState["curLevel"]);
+      
+    }
+    public void LoadLastGameCoins()
+    {
+        //получаем данные
+        Dictionary<string, object> _savedGameState=LoadSaveFile();
+        
+        ManagerController.Player.UpdateData((int)_savedGameState["coins"], (int)_savedGameState["maxCoins"]);
+        ManagerController.Player.DisplayCoins((int)_savedGameState["coins"]);
+    }
+
+    public Dictionary<string, object> LoadSaveFile()
+    {
         //проверка существует ли сохраненный файл
         if (!File.Exists(fileName))
         {
-            return;
+            return null;
         }
         //если файл существует, данные распаковываются
         Dictionary<string, object> _savedGameState;
 
         BinaryFormatter formatter = new BinaryFormatter();
         FileStream stream = File.Open(fileName, FileMode.Open);
-        _savedGameState=formatter.Deserialize(stream) as Dictionary<string, object>;
+        _savedGameState = formatter.Deserialize(stream) as Dictionary<string, object>;
         stream.Close();
 
-        ManagerController.Mission.UpdateData((int)_savedGameState["curLevel"], (int)_savedGameState["maxLevel"]);
-        ManagerController.Player.UpdateData((int)_savedGameState["coins"], (int)_savedGameState["maxCoins"]);  ManagerController.Mission.RestatrCurrent((int)_savedGameState["curLevel"]);
-      
+        //возвращаем данные в виде dictionary
+        return _savedGameState;
     }
 
-  
-   
 }

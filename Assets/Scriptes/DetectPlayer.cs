@@ -5,20 +5,16 @@ using UnityEngine.UI;
 
 public class DetectPlayer : MonoBehaviour
 {
+    
     [SerializeField] private Image imagePanel;
    
     void Start()
     {
+        //в начале ставим панель Рестарта неактивной
         imagePanel.gameObject.SetActive(false);
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-   
+    //при обнаружении Игрока появляется панель Restart и уничтожается игрок
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -30,8 +26,7 @@ public class DetectPlayer : MonoBehaviour
 
     private IEnumerator PlayerDie(GameObject player)
     {
-        
-        yield return new WaitForSeconds(0.5f);
+         yield return new WaitForSeconds(0.5f);
         Destroy(player);
     }
 }

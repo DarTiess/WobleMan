@@ -7,13 +7,7 @@ using UnityEngine.UI;
 public class CurrentLevelInfo : MonoBehaviour
 {
     public Text textLevel;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+   //указатель на каком уровне игрок находится
     void Update()
     {
        textLevel.text = "Level : "+(SceneManager.GetActiveScene().buildIndex).ToString();

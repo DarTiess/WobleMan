@@ -16,14 +16,18 @@ public class EnemyMoveY : MonoBehaviour
     }
     public void Move()
     {
+        //движение врага по заданной траектории
+        //определяем точки начала движения и конца
         Vector3 endPosition = finishRoad.transform.position;
         Vector3 startPosition = startRoad.transform.position;
 
         Vector3 tempPosition = transform.position;
 
+        //движение по оси z
         tempPosition.z += speed * Time.deltaTime;
         transform.position = tempPosition;
 
+        //если объект дошел до начала движения, разворачиваем объект и меняем направление движения
         if (tempPosition.z > startPosition.z)
         {
             speed = -Mathf.Abs(speed);
@@ -35,16 +39,5 @@ public class EnemyMoveY : MonoBehaviour
             transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
         }
       
-    }
-
-    void TurnAround()
-    {
-        float yTemp = transform.rotation.y;
-     
-        if (yTemp == 90)
-        {
-            yTemp = yTemp + 180;
-        } 
-        transform.rotation = Quaternion.Euler(new Vector3(0, yTemp, 0));
     }
 }

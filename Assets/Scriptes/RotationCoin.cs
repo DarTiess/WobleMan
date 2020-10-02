@@ -6,14 +6,13 @@ public class RotationCoin : MonoBehaviour
 {
     [SerializeField]
     private float tumble;
-
-
-
-        void Start()
+    //запускаем повороты вокруг своей оси GameObject
+         void Start()
     {
         GetComponent<Rigidbody>().angularVelocity = Random.insideUnitSphere * tumble;
     }
 
+    //при столкновении с Игроком добавляются очки, и уничтожается объект
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")

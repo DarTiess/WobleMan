@@ -14,7 +14,7 @@ public class MissionManager : MonoBehaviour, IGameManager
     {
         UpdateData(1, 4);
     }
-    // Update is called once per frame
+    
     public void UpdateData(int curLevel, int maxLevel)
     {
         this.curLevel = curLevel;
@@ -23,20 +23,31 @@ public class MissionManager : MonoBehaviour, IGameManager
 
     public void OnStart()
     {
+        //Начало игры - загрузка первого уровня, 
+        //отчистить заработанные ранее очки, 
+        //и сохранить состояние 
         SceneManager.LoadScene("Scene_" + curLevel);
+        ManagerController.Player.DisplayCoins(0);
         ManagerController.Data.SaveGameState();
     }
 
     public void OnRestart()
     {
-        curLevel = SceneManager.GetActiveScene().buildIndex;
+        //получаем билд активной сцены, и перезапускаем сначала
+        curLevel = SceneManager.GetActiveScene().buildIndex; 
+        //за проигрыш отнимаем очки
+        ManagerController.Player.ChangeCoinsMinusCount();
         SceneManager.LoadScene("Scene_" + curLevel);
+       
     }
     public void NextLevel()
     {
+        //получаем билд активной сцены, загружаем след по порядку билд сцены
+        //сохраняем состояние в файл
         curLevel = SceneManager.GetActiveScene().buildIndex + 1;
         SceneManager.LoadScene("Scene_" + curLevel);
         ManagerController.Data.SaveGameState();
+        //пауза в игре
         Time.timeScale = 1;
     }
     public void RestatrCurrent(int currentValue)
@@ -46,6 +57,7 @@ public class MissionManager : MonoBehaviour, IGameManager
     }
     public void OnQuit()
     {
+        //завершение приложения
         Application.Quit();
 
     }

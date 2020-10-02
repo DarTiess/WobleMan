@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class LevelComplete : MonoBehaviour
 {
+    //По достижению цели активируется панель Перехода на след уровень
+    //и салют на заднем плане
     [SerializeField] private Image completePanel;
     [SerializeField] private GameObject birthdaySpark;
     [SerializeField] private GameObject birthdayConfetti;
@@ -13,14 +15,8 @@ public class LevelComplete : MonoBehaviour
     void Start()
     {
         completePanel.gameObject.SetActive(false);
-       
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
