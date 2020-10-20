@@ -6,12 +6,13 @@ using UnityEngine.UI;
 public class DetectPlayer : MonoBehaviour
 {
     
-    [SerializeField] private Image imagePanel;
-   
+    [SerializeField] private Image restartPanel;
+    [SerializeField] private Image touchPanel;
+
     void Start()
     {
         //в начале ставим панель Рестарта неактивной
-        imagePanel.gameObject.SetActive(false);
+        restartPanel.gameObject.SetActive(false);
         
     }
     //при обнаружении Игрока появляется панель Restart и уничтожается игрок
@@ -19,7 +20,8 @@ public class DetectPlayer : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            imagePanel.gameObject.SetActive(true);
+            touchPanel.gameObject.SetActive(false);
+            restartPanel.gameObject.SetActive(true);
             StartCoroutine(PlayerDie(other.gameObject));
         }
     }

@@ -7,10 +7,10 @@ public class GameManager : MonoBehaviour
    
     static public GameManager SingleManager;
 
-    public GameObject playerPrefab;
+    public GameObject playerPosition;
 
-    private ParticleSystem explosion;
-    public GameObject explosionEffect;
+   // private ParticleSystem explosion;
+   // public GameObject explosionEffect;
 
     private void Awake()
     {
@@ -22,13 +22,14 @@ public class GameManager : MonoBehaviour
 
     public void StartPlayer()
     {
-        Vector3 startPosition = Vector3.zero;
+        playerPosition.SetActive(true);
+       /* Vector3 startPosition = playerPosition;
         //проигрываем эффект возникновения
         explosion = explosionEffect.GetComponent<ParticleSystem>();
         explosion.Play(true);
         //создаем объект(игрока) на стартовой позиции
         GameObject player = Instantiate(playerPrefab);
-        player.transform.position = startPosition;
+        player.transform.position = startPosition;*/
     }
    
 }

@@ -8,6 +8,7 @@ public class LevelComplete : MonoBehaviour
     //По достижению цели активируется панель Перехода на след уровень
     //и салют на заднем плане
     [SerializeField] private Image completePanel;
+    [SerializeField] private Image touchPanel;
     [SerializeField] private GameObject birthdaySpark;
     [SerializeField] private GameObject birthdayConfetti;
    
@@ -21,6 +22,7 @@ public class LevelComplete : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            touchPanel.gameObject.SetActive(false);
             birthdaySpark.SetActive(true);
             birthdayConfetti.SetActive(true);
             completePanel.gameObject.SetActive(true);
